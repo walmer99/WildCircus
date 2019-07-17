@@ -1,0 +1,54 @@
+{% extends "base.html.twig" %}
+
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+    <div class="video">
+        <video autoplay muted loop id="myVideo">
+            <source src="{{ asset('pictures/cirque.mp4') }}"  type="video/mp4" >
+
+        </video>
+        <div class="content-video container">
+            <h1>Waouh !</h1>
+            <p>You'll be amazed ! </p>
+        </div>
+    </div>
+    <div class="news">
+        <h1 class="container">Les nouveautés </h1>
+        <div class="card-deck">
+            <div class="card1">
+                <a href="http://www.laroutedulouvre.fr/index.php" target="_BLANK">
+                    <img class="card-img-top" src="../src/img/louvre.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn"> <h3>La route du Louvre</h3></button>
+                    </div>
+                    <!--<p class="card-text">Cette manifestation, à la fois sportive et culturelle comporte trois épreuves hors-stade de course à pied :
+                    <br> - Un marathon international de Lille à Lens et qui regroupe plus de 3000 personnes.
+                    <br> - Une course pédestre de 10 km et 9 randonnées (de 5 à 35 km), dont une randonnée cyclotouriste.
+                    <br> - Une course de relais en 6 étapes.</p>-->
+                </a>
+            </div>
+            <div class="card2">
+                <a href="https://www.lille.fr/Que-faire-a-Lille/Envie-de-sport/A-chacun-son-sport/L-handisport" target="_BLANK">
+                    <img class="card-img-top" src="../src/img/handisport.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn"><h3>Handisport</h3></button>
+                    </div>
+                    <!--<p class="card-text">L’Association Droit Au Vélo (ADAV), en partenariat avec la Ville, la MEL et lille3000, vous invite chaque année à fêter la petite reine, à l’occasion d’un week-end ludique généralement programmé fin mai. Randonnées, pique-niques, parades, essais de vélos rigolos, cycloscopes, balades, ateliers… Tout est réuni pour vivre un week-end d’exception. </p>-->
+                </a>
+            </div>
+            <div class="card3">
+                <a href="https://trail-extreme-lille.com/" target="_BLANK">
+                    <img class="card-img-top" src="../src/img/trail.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn"><h3>Trail extreme lillois !</h3></button>
+                    </div>
+                    <!--<p class="card-text">Pour sa 11 ème édition, le Trail Extrême Lillois emprunte sur ses  45 km (solo ou relais), 30 km, 15 km ou 8 km, plus de 90% de chemins et de sous bois, il met également en valeur le patrimoine de historique de la Ville de Lille avec ses remparts et son bois de la Citadelle. <br>Et cette année, la nouveauté le 8km Ladies une course réservée aux femmes</p>-->
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

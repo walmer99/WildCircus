@@ -1,0 +1,214 @@
+@import "~bootstrap/scss/bootstrap";
+
+.content-video{
+    position:relative;
+    z-index:3;
+    color:#e1e9f7;
+    text-align: center;
+    padding:1px;
+    max-width: 1140px;
+    border-radius: 250px
+}
+
+.content-video h1{
+    font-family: 'Bangers', cursive;
+    font-size:80px !important;
+}
+
+.content-video p{
+    font-family: 'Bangers', cursive;
+}
+
+.news{
+    position: relative;
+    top:-40px;
+}
+
+.news h1{
+    font-family: 'Bangers', cursive;
+    font-size:40px;
+    color:#0E3035;
+    text-align: center;
+    top:-40px;
+}
+
+.news h5{
+    color:#e1e9f7;
+    font-size:30px;
+}
+
+.news p{
+    color:#e1e9f7;
+    font-size:18px;
+}
+
+.news button {
+    position: relative;
+    bottom:0px;
+    color: #e1e9f7;
+}
+
+.news button:hover{
+    color:#0E3035;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin-right: 5px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s al
+}
+
+.news button:focus, .news button:active {
+    border:solid 2px #0E3035;
+    color:#e1e9f7;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.card-deck{
+    justify-content: center;
+}
+
+.card1{
+    width: 350px;
+    height: 450px;
+    margin-left:25px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #019ad6;
+    overflow: hidden;
+}
+
+.card1 > a > img{
+    transition: 0.5s;
+}
+
+.card1:hover > a > img{
+    width: 105%;
+    height: auto;
+}
+
+.card3{
+    width: 350px;
+    height: 450px;
+    margin-left:25px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background:#4caf50;
+    overflow: hidden;
+}
+
+.card3 > a > img{
+    transition: 0.5s;
+}
+
+.card3:hover > a > img{
+    width: 105%;
+    height: auto;
+}
+
+.card2{
+    width: 350px;
+    height:450px;
+    margin-left:25px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background:#f8700b;
+    overflow: hidden;
+}
+
+.card2 > a > img{
+    transition: 0.5s;
+}
+
+.card2:hover > a > img{
+    width: 105%;
+    height: auto;
+}
+
+.card-text {
+    text-align: justify;
+    padding: 20px;
+}
+
+.card-deck{
+    margin:0;
+    max-width: 100%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 991.9px ){
+    #myVideo {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity:0.9;
+        overflow: hidden;
+    }
+
+    .content-video{
+        background:transparent;
+        top:-200px;
+    }
+
+    .content-video h1{
+        font-size:40px;
+    }
+    .content-video p{
+        font-size:20px;
+    }
+
+    .news  h1{
+        color:#0E3035;
+        font-size:40px;
+        position: relative;
+        margin-bottom:30px;
+    }
+}
+
+/* DESK */
+@media only screen and (min-width: 992px ){
+    #myVideo {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        max-height: 800px;
+        z-index: 1;
+        opacity:0.9;
+    }
+
+    .content-video{
+        background:black;
+        top:-65px;
+        border-radius:5px;
+    }
+
+    .content-video h1{
+        font-size:50px;
+    }
+
+    .content-video p{
+        font-size:22px;
+    }
+
+    .news  h1{
+        color:#0E3035;
+        font-size:40px;
+        position: relative;
+        margin-top:80px;
+    }
+
+}
+
+/*REGISTER FORM*/
+form {
+
+}

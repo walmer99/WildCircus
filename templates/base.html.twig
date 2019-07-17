@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    {% block stylesheet %}
+        {{ encore_entry_link_tags('app') }}
+        {{ encore_entry_link_tags('style') }}
+    {% endblock %}
+
+</head>
+
+<body>
+
+<!--NAVBAR MOBILE-->
+<nav class="mobile navbar navbar-expand-lg col-12 col-sm-12 col-md-12 navbar-light">
+
+    <a class="mobile navbar-brand" href="#"><img class="nav-brand-mobile" src="../src/img/zouhzouh-125.png"></a>
+
+    <button class="mobile navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="mobile collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="?p=home">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a id="btnModal1" class="nav-link btnmodal">Connexion / Inscription</a>
+            </li>
+            <li class="nav-item">
+                <a id="btnModal2" class="nav-link btnmodal">Mon compte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?p=chercheStage">Stages sportifs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?p=contactezNous">Contactez nous</a>
+            </li>
+        </ul>
+
+        <form class="form-inline form-nav row my-2 my-lg-0">
+            <input class="form-control col-8 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn loupe my-2 col-2" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+</nav>
+<!--FIN NAVBAR MOBILE-->
+
+<!--NAVBAR DESK-->
+<div id="mySidenav" class="sidenav desk">
+    <a id="btnModal6">X</a>
+
+
+    <div class="navbar-content">
+
+        <form class="form-inline form-nav row my-2 my-lg-0">
+            <input class="form-control col-8 search" type="search" placeholder="Search" aria-label="Search">
+            <img class="loupe"  type="submit" src="{{ asset('pictures/readmore.png') }}" alt="logo">
+        </form>
+
+        <a class="1active" href="?p=home">The Tour</a>
+        <a id="btnModal3" class="btnmodal">Book you seats</a>
+        <a id="btnModal4" class="btnmodal">Shop</a>
+        <a class="6active" href=""> <img class="pictosNav" src="{{ asset('pictures/send.png') }}" alt="contac-us"></a>
+    </div>
+</div>
+<!--FIN NAVBAR DESK-->
+
+<!-- element pour ouvrir la sidenav -->
+<div id="btnModal5">
+    <img class="clown" src="{{ asset('pictures/clown.png') }}" alt="bouton-menu"><p class="animated infinite bounce delay-2s">ClicK here to discover our amaring menu</p>
+</div>
+<div class="logo"><h2>The Wild Circus</h2></div>
+
+
+
+
+<div id="main">
+    <!--METTRE CONTENU-->
+        <!-- Modal Mobile-->
+    <div id="myModal1" class="modal mobile">
+        <div class="modal-content">
+            <div class="modalh">
+                <h1>Connexion / Inscription</h1>
+                <span id="closeModal1" class="closemodal">&times;</span>
+            </div>
+            <div class="modalbody col-12">
+                <h3>S'identifier :</h3>
+                <form action="" method="post">
+                    <div class="userin"><input class="row userstyle" type="text" name="login_username" placeholder="Username"></div>
+                    <div class="passin"><input class="row passstyle" type="password" name="login_password" placeholder="Password"></div>
+                    <button class="btn connexion my-2 col-2" type="submit">Connexion</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <h3>Nouveaux membres ? <br>Par ici !</h3>
+                <div class="co">
+                    <a href="?p=sportmanSubscribe" class="btn cosportif">Je suis un sportif !</a>
+                    <a href="?p=clubSubscribe" class="btn coclub row">Je suis un prestataire !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal mobile">
+        <div class="modal-content">
+            <div class="modalh">
+                <h1>Mon compte</h1>
+                <span id="closeModal2" class="closemodal">&times;</span>
+            </div>
+            <div class="modalbody col-12">
+                <h3>Bienvenue Membre !
+                    <br><br> Que souhaitez vous faire ?
+                </h3>
+                <a href="?p=account_page" class="btn cosportif row" type="submit">Voir mon profil</a>
+                <button class="btn coclub row" type="submit">Accéder à mon agenda</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Desk -->
+    <div id="myModal3" class="modal desk">
+        <div class="modal-content">
+            <div class="modalh">
+                <h1>Connexion / Inscription</h1>
+                <span id="closeModal3" class="closemodal">&times;</span>
+            </div>
+            <div class="modalbody col-12">
+                <h3>S'identifier :</h3>
+                <form action="" method="post">
+                    <div class="userin"><input class="row userstyle" type="text" name="login_username" placeholder="Username"></div>
+                    <div class="passin"><input class="row passstyle" type="password" name="login_password" placeholder="Password"></div>
+                    <button class="btn connexion my-2 col-2" type="submit">Connexion</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <h3>Nouveaux membres ? <br>Par ici !</h3>
+                <br>
+                <br>
+                <br>
+                <a href="?p=sportmanSubscribe" class="btn cosportif">Je suis un sportif !</a>
+                <a href="?p=clubSubscribe" class="btn coclub row">Je suis un prestataire !</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal4" class="modal desk">
+        <div class="modal-content">
+            <div class="modalh">
+                <h1>Mon compte</h1>
+                <span id="closeModal4" class="closemodal">&times;</span>
+            </div>
+            <div class="modalbody col-12">
+                <h3>Bienvenue Membre !
+                    <br><br> Que souhaitez vous faire ?
+                </h3>
+                <a href="?p=accountPage" class="btn cosportif row" type="submit">Voir mon profil</a>
+                <button class="btn coclub row" type="submit">Accéder à mon agenda</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% block body %}{% endblock %}
+
+
+<div class="footer">
+    <a href="https://wildcodeschool.fr/" target="_blank"
+       class="copyright"><p class="text-footer">© 2019 Copyright: Made with ❤️ by Wild Code School</p></a>
+</div>
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+{{ encore_entry_script_tags('app') }}
+{% endblock %}
+
+</body>
+
